@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ghotmall:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="ghotmall.war">
+      <element id="artifact" artifact-name="ghotmall:war exploded" />
+    </root>
+  </artifact>
+</component>
