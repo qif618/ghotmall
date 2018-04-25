@@ -8,8 +8,12 @@
 	http://www.springframework.org/schema/mvc
 	http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
+    <!--annotation-config激活@Require @autowired等标注-->
     <context:component-scan base-package="com.lyf" annotation-config="true"/>
 
+    <!--自动注册DefaultAnnotationHandlerMapping与AnnotationMethodHandlerAdapter -->
+    <!--两个bean,是spring MVC为@Controllers分发请求所必须的-->
+    <!--并提供了数据绑定支持，-->
     <mvc:annotation-driven>
         <mvc:message-converters>
             <bean class="org.springframework.http.converter.StringHttpMessageConverter">
